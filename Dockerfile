@@ -7,5 +7,5 @@ WORKDIR /app
 # 复制当前目录下的所有文件和子目录到容器的 /app 目录
 COPY . /app
 
-RUN chmod +x /deploy.sh
-ENTRYPOINT ["/deploy.sh"]
+RUN chmod +x deploy.sh
+ENTRYPOINT ["deploy.sh"]
