@@ -8,4 +8,4 @@ WORKDIR /app
 COPY . /app
 
 RUN chmod +x deploy.sh
-CMD ["deploy.sh"]
+CMD ["deploy.sh","run"]
